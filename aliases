@@ -1,0 +1,25 @@
+Show Aliases
+===========
+git config --global -l
+
+
+git config --global alias.p 'push'
+git config --global alias.st 'status -sb'
+git config --global alias.ll 'log --oneline'
+git config --global alias.last 'log -1 HEAD --stat'
+git config --global alias.cm 'commit -m'
+git config --global alias.rv 'remote -v'
+git config --global alias.d 'diff'
+git config --global alias.b 'branch'
+git config --global alias.dv 'difftool -t vimdiff -y'  (git dv 33559c5 ca1494d file1)
+git config --global alias.gl 'config --global -l'
+git config --global alias.se '!git rev-list --all | xargs git grep -F' (git se test2)
+
+Autocorrect yout aliases
+git config --global help.autocorrect 20  
+
+(git ts
+WARNING: You called a Git command named 'ts', which does not exist.
+Continuing in 2.0 seconds, assuming that you meant 'st'.
+## branch1
+?? test4)
